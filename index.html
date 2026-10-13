@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat GPT</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+<div class="app">
+
+    <aside class="sidebar">
+        <h2>✳ Chat GPT </h2>
+
+        <button id="newChat">＋ New Chat</button>
+        <button id="themeBtn">◐ Change Theme</button>
+
+        <h4>Recent Chats</h4>
+        <div id="history"></div>
+    </aside>
+
+    <main class="main">
+
+        <header>
+            <h3>Chat <span>GPT</span></h3>
+            <button id="aboutBtn">About</button>
+        </header>
+
+        <section id="chat">
+
+            <div id="welcome">
+                <h1>What can I help with?</h1>
+                <p>Your ideas. Your AI assistant.</p>
+
+                <div class="cards">
+                    <button data-prompt="Explain HTML">
+                        💻 <b>Learn HTML</b>
+                        <small>Understand web structure</small>
+                    </button>
+
+                    <button data-prompt="Explain CSS">
+                        🎨 <b>Learn CSS</b>
+                        <small>Style your website</small>
+                    </button>
+
+                    <button data-prompt="Explain JavaScript">
+                        ⚡ <b>Learn JavaScript</b>
+                        <small>Make pages interactive</small>
+                    </button>
+
+                    <button data-prompt="Give me project ideas">
+                        💡 <b>Get Ideas</b>
+                        <small>Discover projects</small>
+                    </button>
+                </div>
+            </div>
+
+        </section>
+
+        <button id="scrollBottom" title="Scroll to latest message">↓</button>
+
+        <footer>
+            <form id="form">
+
+                <div class="plus-container">
+                    <button type="button" id="plusBtn" class="plus">+</button>
+
+                    <div id="options" class="options">
+                        <button type="button" id="uploadBtn">📎 Upload File</button>
+                        <button type="button" id="photoBtn">📷 Choose Photo</button>
+                        <button type="button" id="textBtn">📝 Add Text</button>
+                    </div>
+
+                    <input type="file" id="fileInput" hidden>
+                    <input type="file" id="photoInput" accept="image/*" hidden>
+                </div>
+
+                <input id="message" placeholder="Message Chat GPT..." autocomplete="off">
+
+                <button type="submit" class="send">↑</button>
+
+            </form>
+
+            <p class="note">Chat GPT is a demo chatbot. Verify important information.</p>
+        </footer>
+
+    </main>
+</div>
+
+</body>
+</html>
+
